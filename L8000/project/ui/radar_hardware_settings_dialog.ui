@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RadarHardwareSettingsDialog</class>
+ <widget class="QDialog" name="RadarHardwareSettingsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei UI</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>雷达硬件参数设置</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_6">
+   <item row="2" column="5">
+    <widget class="QGroupBox" name="groupBox_antenna_settings">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>天线相关</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>天线工作/校准</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>保护通道衰减2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>保护通道衰减1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>和差通道衰减1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="lineEdit_sigma_delta_decay_1">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBox_work_mode_or_correct_mode">
+        <item>
+         <property name="text">
+          <string>正常工作</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>校准模式</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox_antenna_weight_method">
+        <item>
+         <property name="text">
+          <string>方式0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>方式1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>方式2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>方式3</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>俯仰支架</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLineEdit" name="lineEdit_protected_decay_1">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="comboBox_antennna_freq_code">
+        <item>
+         <property name="text">
+          <string>0-16.00</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1-16.04</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2-16.08</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3-16.12</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4-16.16</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5-16.20</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6-16.24</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7-16.28</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8-16.32</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9-16.36</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10-16.40</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>发射波束抬升</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>频率码</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>配置天线</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_antennna_fre_or_amp_config">
+        <item>
+         <property name="text">
+          <string>工作频率</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>幅相控制</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLineEdit" name="lineEdit_protected_decay_2">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="comboBox_elev_support_angle">
+        <item>
+         <property name="text">
+          <string>30 度</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7.5 度</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineEdit_antenna_raising_angle">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>配置天线加权</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="lineEdit_sigma_delta_decay_2">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>和差通道衰减2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="5">
+    <widget class="QGroupBox" name="groupBox_signal_processing_settings">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>信号处理相关</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="checkBox_remove_dc_flag">
+        <property name="text">
+         <string>去直流</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>CFAR方式</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="checkBox_STC">
+        <property name="text">
+         <string>STC</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QComboBox" name="comboBox_cfar_method">
+        <item>
+         <property name="text">
+          <string>dop_amp&amp;2d_max</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>dop_snr&amp;2d_max</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>dop_amp&amp;2d_mean</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>dop_snr&amp;2d_mean</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="4">
+       <widget class="QTableWidget" name="tableWidget_thresholds">
+        <row>
+         <property name="text">
+          <string>速度门限</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2d门限切换距离点</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2d近距离门限</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2d远距离门限</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>FFT截位</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>截位距离</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>近距离截位数</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>远距离截位数</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>删除点1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>删除点2</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>删除点3</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>删除点4</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>近搜</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>远搜</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>超远搜</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>近跟</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>近跟B</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>远跟</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>远跟B</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="5" rowspan="2">
+    <widget class="QGroupBox" name="groupBox_DBF_settings">
+     <property name="title">
+      <string>DBF相关</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_37">
+        <property name="text">
+         <string>幅度码</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_amp_code">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="comboBox_DBF_coe_choose">
+        <item>
+         <property name="text">
+          <string>无加权</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>taylor加权</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_33">
+        <property name="text">
+         <string>通道(1-15)</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_amp_phase_control_mode">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_35">
+        <property name="text">
+         <string>DBF加权方式</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_channel_amp_phase_control_code">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_34">
+        <property name="text">
+         <string>通道幅相控制相位码</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_channel_num">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_36">
+        <property name="text">
+         <string>通道幅相控制模式</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>接收抬升</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="comboBox_dbf_coef_receive_raise_angle">
+        <item>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>0.5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QGroupBox" name="groupBox_work_mode_settings">
+     <property name="title">
+      <string>工作模式</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_53">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>工作/serdes检测</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_20">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>工作使能/测试模式/发射校准</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox_work_or_emulate">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>正常工作</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>仿真1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>仿真2</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_52">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>工作/仿真</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_work_or_serdes">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>正常工作模式</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>serdes检测</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBox_antenna_enable">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>使能</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>非使能</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>测试模式1 (64通道100点下变频)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>测试模式2 (和差波束能量值)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>发射通道校准模式</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QGroupBox" name="groupBox_turntable_settings">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>转台相关</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>转动方式</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBox_turntable_rotating_mode">
+        <item>
+         <property name="text">
+          <string>停止模式</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>指向模式</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>顺时针转动</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>逆时针转动</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>码盘模式</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>指向角度</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>转动速度</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_turntabel_rotating_speed">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineEdit_turntable_pointing_angle">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_SPR">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>SPR</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="4">
+    <widget class="QGroupBox" name="groupBox_poweroff_area_settings">
+     <property name="title">
+      <string>静默设置</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="checkBox_enble_power_off_area">
+        <property name="text">
+         <string>静默使能</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>静默起始角</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="lineEdit_power_off_azim_deg_floor">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>静默终止角</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLineEdit" name="lineEdit_power_off_azim_deg_ceil">
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="6" alignment="Qt::AlignRight">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+     <property name="centerButtons">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>RadarHardwareSettingsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>RadarHardwareSettingsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

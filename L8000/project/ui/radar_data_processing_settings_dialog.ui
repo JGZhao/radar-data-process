@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RadarDataProcessingSettingsDialog</class>
+ <widget class="QDialog" name="RadarDataProcessingSettingsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei UI</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>雷达软件设置</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_16">
+   <item row="1" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+      </font>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+     <property name="centerButtons">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget_radar_data_processing_settings">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_data_extraction">
+      <attribute name="title">
+       <string> 数据解析</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_radar_waveform_parameters">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>雷达波形参数</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0" rowspan="2" colspan="2">
+           <widget class="QTableWidget" name="tableWidget_radar_waveform_parameters">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>240</height>
+             </size>
+            </property>
+            <row>
+             <property name="text">
+              <string>近搜</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Microsoft YaHei UI</family>
+              </font>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>远搜</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>超远搜</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>近跟</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>近跟B</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>远跟</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>远跟B</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>距离单元 (m)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>盲区 (m)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>速度单元 (m/s)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>MTD 次数</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>RCS 修正系数</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>衰减0 (dB)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>距离分界01 (m)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>距离分界12 (m)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>衰减2 (dB)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>方位校正时间 (s)</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBox_sigma_delta_parameters">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>和差参数</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget_sigma_delta_parameters">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="sortingEnabled">
+             <bool>false</bool>
+            </property>
+            <row>
+             <property name="text">
+              <string>方位向</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Microsoft YaHei UI</family>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>俯仰向</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>俯仰向加权</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>是否和差</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>是否加权</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>斜率</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>相位下界 ( ° )</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>相位上界 ( ° )</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>波束宽度 ( ° )</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>偏移范围 ( ° )</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>和差过滤</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>过滤比率差/和</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QTableWidget" name="tableWidget_sigma_delta_elev_slope_each_beam">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <row>
+             <property name="text">
+              <string>俯仰不加权</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>俯仰加权</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>0</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>2</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>3</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>4</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>5</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>6</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>7</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>8</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>9</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="groupBox_azim_elev_bias">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>角度校正</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="lineEdit_elev_bias_deg">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>方位角 ( ° )</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_height_bias">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_azim_bias_deg">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>高度 (m)</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_23">
+            <property name="text">
+             <string> 俯仰角 ( ° )</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QGroupBox" name="groupBox_lon_lat_alt">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>经纬度</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_latitude">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QCheckBox" name="checkBox_convert_lon_lat_alt">
+            <property name="text">
+             <string>是否转换经纬度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="lineEdit_longitude">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>纬度 ( ° )</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>经度 ( ° )</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLineEdit" name="lineEdit_altitude">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>海拔 (m)</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_data_filter">
+      <attribute name="title">
+       <string>数据过滤</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="1" rowspan="4">
+        <widget class="QGroupBox" name="groupBox_side_lobe_filter">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>副瓣剔除</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="8" column="0">
+           <widget class="QCheckBox" name="checkBox_delta_elev_filter">
+            <property name="text">
+             <string>是否俯仰差通道滤除</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QCheckBox" name="checkBox_delta_azim_filter">
+            <property name="text">
+             <string>是否方位差通道滤除</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="2">
+           <widget class="QLabel" name="label_59">
+            <property name="text">
+             <string>俯仰差比例</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="3">
+           <widget class="QLineEdit" name="lineEdit_delta_elev_filter_ratio">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QLineEdit" name="lineEdit_delta_azim_filter_ratio">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLabel" name="label_58">
+            <property name="text">
+             <string>方位差比例</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="7" column="0" rowspan="2" colspan="2">
+        <widget class="QGroupBox" name="groupBox_exclude">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>exclude</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget_exclude">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>340</height>
+             </size>
+            </property>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>2</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>3</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>4</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>5</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>6</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>7</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>8</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>9</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>10</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>勾选</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>模式下界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>模式上界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>距离下界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>距离上界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>方位下界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>方位上界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>俯仰下界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>俯仰上界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>速度下界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>速度上界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>幅度下界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>幅度上界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>高度下界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>高度上界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QGroupBox" name="groupBox_clutter_map_filter">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>杂波图</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_14">
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_53">
+            <property name="text">
+             <string> 迭代权重</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_clutter_map_generate_weight">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="checkBox_clutter_map_filter">
+            <property name="text">
+             <string>是否杂波图剔除</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_55">
+            <property name="text">
+             <string> 滤波阈值</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="lineEdit_clutter_map_filter_threshold">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="6">
+        <widget class="QGroupBox" name="groupBox_filter_area">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>选择区域</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_12">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget_filter_area">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <row>
+             <property name="text">
+              <string>模式</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>距离 (m)</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>方位 ( ° )</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>俯仰 ( ° )</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>速率 (m/s)</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>高度 (m)</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>幅度</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>勾选</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>下界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>上界</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QGroupBox" name="groupBox__filter_cloud">
+         <property name="title">
+          <string>云雨杂波过滤</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_25">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="checkBox_enable_filer_cloud">
+            <property name="text">
+             <string>是否过滤云雨杂波</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>云雨杂波阈值</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLineEdit" name="lineEdit_filter_cloud_threshold">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_data_processing">
+      <attribute name="title">
+       <string> 数据处理</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0" rowspan="2">
+        <widget class="QGroupBox" name="groupBox_combine_thresholds">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>融合门限</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_15">
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_combine_range_threshold">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>距离门门限</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_93">
+            <property name="text">
+             <string>距离门限 (m)</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_92">
+            <property name="text">
+             <string>方位门限 ( ° )</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>多普勒门门限</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lineEdit_combine_azim_threshold_deg">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_combine_range_unit_threshold">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="lineEdit_combine_doppler_unit_threshold">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_94">
+            <property name="text">
+             <string>速度门限 (m/s)</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLineEdit" name="lineEdit_combine_velocity_threshold">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLineEdit" name="lineEdit_combine_elev_threshold_deg">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_95">
+            <property name="text">
+             <string>俯仰门限 ( ° )</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" rowspan="4">
+        <widget class="QGroupBox" name="groupBox_track_smooth">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>航迹平滑</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_track_smooth_mode_0">
+            <property name="title">
+             <string>模式0</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_26">
+             <item row="4" column="4">
+              <widget class="QLineEdit" name="lineEdit_filter_track_coef_gama">
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3">
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>alpha</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="2">
+              <widget class="QCheckBox" name="checkBox_track_smooth">
+               <property name="text">
+                <string>是否平滑</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="QLabel" name="label_17">
+               <property name="text">
+                <string>gama</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>beta</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1" colspan="2">
+              <widget class="QLineEdit" name="lineEdit_filter_track_coef_beta">
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="4">
+              <widget class="QLineEdit" name="lineEdit_filter_track_coef_alpha">
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>滤波方法</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1" colspan="2">
+              <widget class="QComboBox" name="comboBox_filter_track_method">
+               <item>
+                <property name="text">
+                 <string>无</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>变增益 alpha-beta</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>常增益 alpha-beta</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>变增益 alpha-beta-gama</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>常增益 alpha-beta-gama</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox_track_smooth_mode_1">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>模式1</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_27">
+             <item row="0" column="0" colspan="2">
+              <widget class="QCheckBox" name="checkBox_track_smooth_1">
+               <property name="text">
+                <string>是否平滑</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="5">
+              <widget class="QLabel" name="label_21">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>alpha</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1" colspan="4">
+              <widget class="QComboBox" name="comboBox_filter_track_method_1">
+               <item>
+                <property name="text">
+                 <string>无</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>变增益 alpha-beta</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>常增益 alpha-beta</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>变增益 alpha-beta-gama</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>常增益 alpha-beta-gama</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="4" column="5">
+              <widget class="QLabel" name="label_27">
+               <property name="text">
+                <string>gama</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="6">
+              <widget class="QLineEdit" name="lineEdit_filter_track_coef_alpha_1">
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_20">
+               <property name="text">
+                <string>滤波方法</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1" colspan="4">
+              <widget class="QLineEdit" name="lineEdit_filter_track_coef_beta_1">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="6">
+              <widget class="QLineEdit" name="lineEdit_filter_track_coef_gama_1">
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_22">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>beta</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QGroupBox" name="groupBox_track_filter">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>航迹过滤</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_17">
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_100">
+            <property name="text">
+             <string> 距离差门限 (m)</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="lineEdit_filter_tracks_velocity_threshold">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lineEdit_filter_tracks_range_threshold">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_103">
+            <property name="text">
+             <string>速度门限 (m/s)</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="lineEdit_filter_tracks_mean_delta_range_threshold">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_102">
+            <property name="text">
+             <string>距离门限 (m)</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="checkBox_filter_tracks">
+            <property name="text">
+             <string>是否航迹过滤</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1" rowspan="7">
+        <widget class="QGroupBox" name="groupBox_correlate_thresholds">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>航迹相关参数</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_18">
+          <item row="0" column="0" colspan="2">
+           <widget class="QTableWidget" name="tableWidget_correlate_parameters">
+            <property name="minimumSize">
+             <size>
+              <width>350</width>
+              <height>0</height>
+             </size>
+            </property>
+            <row>
+             <property name="text">
+              <string>距离下界 (m)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>距离上界 (m)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>速度门限同向 (m/s)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>速度门限反向 (m/s)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>方位门限0 ( ° )</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>俯仰门限0 ( ° )</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>距离分界01 (m)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>方位门限1 ( ° )</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>俯仰门限1 ( ° )</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>距离分界12 (m)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>方位门限2 ( ° )</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>俯仰门限2 ( ° )</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>x 门限 (m)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>y 门限 (m)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>z 门限 (m)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>vx 门限 (m/s)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>vy 门限 (m/s)</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>vz 门限 (m/s)</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>模式0</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>模式1</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
